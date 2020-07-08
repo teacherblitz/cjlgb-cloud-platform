@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.cjlgb.design.common.core.cfgbean.BasicConfiguration,\
+  com.cjlgb.design.common.core.cfgbean.WebMvcConfiguration

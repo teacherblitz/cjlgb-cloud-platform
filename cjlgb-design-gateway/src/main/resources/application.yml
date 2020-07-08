@@ -1,0 +1,17 @@
+server:
+  port: 10001
+
+logging:
+  level:
+    com.alibaba.nacos.client.config.impl.ClientWorker: warn
+# 开启Sentinel熔断器
+feign:
+  sentinel:
+    enabled: true
+
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true

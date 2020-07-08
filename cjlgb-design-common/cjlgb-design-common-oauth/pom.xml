@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>cjlgb-design-common</artifactId>
+        <groupId>com.cjlgb</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>cjlgb-design-common-oauth</artifactId>
+
+    <dependencies>
+        <!-- lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <!-- Mybatis Plus配置模块 -->
+        <dependency>
+            <groupId>com.cjlgb</groupId>
+            <artifactId>cjlgb-design-common-mybatis</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <!-- 权限模块 -->
+        <dependency>
+            <groupId>com.cjlgb</groupId>
+            <artifactId>cjlgb-design-common-security</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <!-- Feign -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

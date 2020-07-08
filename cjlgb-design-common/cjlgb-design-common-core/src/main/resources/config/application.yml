@@ -1,0 +1,6 @@
+# actuator 指令配置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

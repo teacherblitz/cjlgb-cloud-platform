@@ -1,0 +1,25 @@
+server:
+  port: 0
+
+logging:
+  level:
+    com.alibaba.nacos.client.config.impl.ClientWorker: warn
+# 开启Sentinel熔断器
+feign:
+  sentinel:
+    enabled: true
+# mybatis-plus config
+mybatis-plus:
+  # 实体扫描，多个package用逗号或者分号分隔
+  type-aliases-package: com.cjlgb.design.common.oauth.entity
+
+# 设置是否允许通过注册与现有定义同名的定义来重写bean定义
+spring:
+# TODO  后期加入配置中心
+  redis:
+    host: cjlgb-design-redis
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://cjlgb-design-mysql:3306/cjlgb_design_oauth?characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: 2e564ee5-d9ed-11e9-bab6-0242ac170005

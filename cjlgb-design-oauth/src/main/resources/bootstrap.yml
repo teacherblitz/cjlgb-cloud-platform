@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: @artifactId@
+  cloud:
+    nacos:
+      discovery:
+        server-addr: cjlgb-design-nacos:8848
+      config:
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+        shared-configs:
+          - application.yaml
+          - application-oauth.yaml
